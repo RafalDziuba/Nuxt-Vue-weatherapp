@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "HistoryList": {
+    "description": "Auto imported from components/HistoryList.vue"
+  },
+  "WeatherForm": {
+    "description": "Auto imported from components/WeatherForm.vue"
+  },
+  "WeatherInfo": {
+    "description": "Auto imported from components/WeatherInfo.vue"
+  }
+}
