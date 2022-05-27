@@ -4,3 +4,9 @@
     <history-list></history-list>
   </div>
 </template>
+
+<script>
+export default {
+
+};
+</script>

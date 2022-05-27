@@ -1,15 +1,18 @@
 <template>
-  <section class="main">
+  <div>
     <the-header></the-header>
-    <weather-info></weather-info>
-    <weather-form></weather-form>
-  </section>
+    <section class="main">
+      <weather-info></weather-info>
+      <weather-form></weather-form>
+    </section>
+  </div>
 </template>
 
 <script>
 import Header from "../components/TheHeader.vue";
 export default {
   components: { Header },
+
   data() {
     return {};
   },
@@ -23,7 +26,6 @@ export default {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
-  background-color: rgb(144, 168, 57);
 }
 
 body {
@@ -32,6 +34,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-image: url("@/assets/p1.jpg");
 }
 
 .main {

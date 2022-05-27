@@ -3,9 +3,3 @@ export default () => ({
   weather: {},
   city: "",
 });
-
-// name: "default city",
-//     main: {
-//       temp: "0",
-//     },
-//     weather: [{ description: "default description" }],

@@ -250,24 +250,6 @@ module.exports = require("vue-no-ssr");
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports) {
-
-module.exports = require("vue-client-only");
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-module.exports = require("vue-router");
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -367,7 +349,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 9 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -490,6 +472,24 @@ function renderStyles (styles) {
 
 
 /***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("vue-client-only");
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("vue-router");
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -501,7 +501,7 @@ if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
-var add = __webpack_require__(9).default
+var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
   add("6ac3c623", content, true, context)
 };
@@ -518,7 +518,7 @@ if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
-var add = __webpack_require__(9).default
+var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
   add("7e56e4e3", content, true, context)
 };
@@ -540,7 +540,7 @@ module.exports = require("vue-meta");
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(15);
-module.exports = __webpack_require__(24);
+module.exports = __webpack_require__(26);
 
 
 /***/ }),
@@ -603,7 +603,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(8);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".__nuxt-error-page{padding:1rem;background:#f7f8fb;color:#47494e;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;font-family:sans-serif;font-weight:100!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:0;right:0;bottom:0}.__nuxt-error-page .error{max-width:450px}.__nuxt-error-page .title{font-size:1.5rem;margin-top:15px;color:#47494e;margin-bottom:8px}.__nuxt-error-page .description{color:#7f828b;line-height:21px;margin-bottom:10px}.__nuxt-error-page a{color:#7f828b!important;text-decoration:none}.__nuxt-error-page .logo{position:fixed;left:12px;bottom:12px}", ""]);
@@ -627,7 +627,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(8);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}", ""]);
@@ -637,11 +637,37 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 /* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(21);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("f52d43e0", content, true)
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".page-enter-active,.page-leave-active{transition:opacity .2s}.page-enter,.page-leave-to{opacity:0}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -668,7 +694,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -689,7 +715,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -705,12 +731,16 @@ __webpack_require__.r(__webpack_exports__);
 
   updateHistory(state, payload) {
     state.history = state.history.concat(payload);
+  },
+
+  clearInput(state, payload) {
+    state.city = "";
   }
 
 });
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -719,14 +749,10 @@ __webpack_require__.r(__webpack_exports__);
   history: [],
   weather: {},
   city: ""
-})); // name: "default city",
-//     main: {
-//       temp: "0",
-//     },
-//     weather: [{ description: "default description" }],
+}));
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1445,7 +1471,7 @@ var external_vue_meta_ = __webpack_require__(13);
 var external_vue_meta_default = /*#__PURE__*/__webpack_require__.n(external_vue_meta_);
 
 // EXTERNAL MODULE: external "vue-client-only"
-var external_vue_client_only_ = __webpack_require__(5);
+var external_vue_client_only_ = __webpack_require__(7);
 var external_vue_client_only_default = /*#__PURE__*/__webpack_require__.n(external_vue_client_only_);
 
 // EXTERNAL MODULE: external "vue-no-ssr"
@@ -1453,7 +1479,7 @@ var external_vue_no_ssr_ = __webpack_require__(4);
 var external_vue_no_ssr_default = /*#__PURE__*/__webpack_require__.n(external_vue_no_ssr_);
 
 // EXTERNAL MODULE: external "vue-router"
-var external_vue_router_ = __webpack_require__(6);
+var external_vue_router_ = __webpack_require__(8);
 var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vue_router_);
 
 // CONCATENATED MODULE: ./.nuxt/router.scrollBehavior.js
@@ -1533,9 +1559,9 @@ function shouldScrollToTop(route) {
 
 
 
-const _76c69f53 = () => interopDefault(__webpack_require__.e(/* import() | pages/history/index */ 5).then(__webpack_require__.bind(null, 42)));
+const _76c69f53 = () => interopDefault(__webpack_require__.e(/* import() | pages/history/index */ 5).then(__webpack_require__.bind(null, 48)));
 
-const _54189f66 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 41)));
+const _54189f66 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 49)));
 
 const emptyFn = () => {};
 
@@ -2059,6 +2085,9 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
+// EXTERNAL MODULE: ./assets/css/main.css
+var main = __webpack_require__(20);
+
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./.nuxt/layouts/default.vue?vue&type=template&id=0040005c&
 var defaultvue_type_template_id_0040005c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Nuxt')}
 var defaultvue_type_template_id_0040005c_staticRenderFns = []
@@ -2086,6 +2115,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
 
 /* harmony default export */ var layouts_default = (default_component.exports);
 // CONCATENATED MODULE: ./.nuxt/App.js
+
 
 
 
@@ -2280,10 +2310,10 @@ let store_store = {};
   // If store is an exported method = classic mode (deprecated)
   // Enforce store modules
   store_store.modules = store_store.modules || {};
-  resolveStoreModules(__webpack_require__(20), 'actions.js');
-  resolveStoreModules(__webpack_require__(21), 'getters.js');
-  resolveStoreModules(__webpack_require__(22), 'mutations.js');
-  resolveStoreModules(__webpack_require__(23), 'state.js'); // If the environment supports hot reloading...
+  resolveStoreModules(__webpack_require__(22), 'actions.js');
+  resolveStoreModules(__webpack_require__(23), 'getters.js');
+  resolveStoreModules(__webpack_require__(24), 'mutations.js');
+  resolveStoreModules(__webpack_require__(25), 'state.js'); // If the environment supports hot reloading...
 })(); // createStore
 
 
@@ -2398,10 +2428,10 @@ function mergeProperty(storeModule, moduleData, property) {
   }
 }
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const HistoryList = () => __webpack_require__.e(/* import() | components/history-list */ 1).then(__webpack_require__.bind(null, 36)).then(c => wrapFunctional(c.default || c));
-const TheHeader = () => __webpack_require__.e(/* import() | components/the-header */ 2).then(__webpack_require__.bind(null, 30)).then(c => wrapFunctional(c.default || c));
-const WeatherForm = () => __webpack_require__.e(/* import() | components/weather-form */ 3).then(__webpack_require__.bind(null, 38)).then(c => wrapFunctional(c.default || c));
-const WeatherInfo = () => __webpack_require__.e(/* import() | components/weather-info */ 4).then(__webpack_require__.bind(null, 37)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const HistoryList = () => __webpack_require__.e(/* import() | components/history-list */ 1).then(__webpack_require__.bind(null, 41)).then(c => wrapFunctional(c.default || c));
+const TheHeader = () => __webpack_require__.e(/* import() | components/the-header */ 2).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c));
+const WeatherForm = () => __webpack_require__.e(/* import() | components/weather-form */ 3).then(__webpack_require__.bind(null, 43)).then(c => wrapFunctional(c.default || c));
+const WeatherInfo = () => __webpack_require__.e(/* import() | components/weather-info */ 4).then(__webpack_require__.bind(null, 42)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {

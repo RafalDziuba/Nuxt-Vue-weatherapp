@@ -10,4 +10,8 @@ export default {
   updateHistory(state, payload) {
     state.history = state.history.concat(payload);
   },
+
+  clearInput(state, payload) {
+    state.city = "";
+  },
 };
