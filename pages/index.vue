@@ -1,16 +1,17 @@
 <template>
   <section class="main">
+    <the-header></the-header>
     <weather-info></weather-info>
     <weather-form></weather-form>
   </section>
 </template>
 
 <script>
+import Header from "../components/TheHeader.vue";
 export default {
+  components: { Header },
   data() {
-    return {
-
-    };
+    return {};
   },
 };
 </script>
