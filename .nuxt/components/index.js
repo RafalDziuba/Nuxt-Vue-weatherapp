@@ -1,7 +1,7 @@
-export const Header = () => import('../..\\components\\Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
-export const HistoryList = () => import('../..\\components\\HistoryList.vue' /* webpackChunkName: "components/history-list" */).then(c => wrapFunctional(c.default || c))
-export const WeatherForm = () => import('../..\\components\\WeatherForm.vue' /* webpackChunkName: "components/weather-form" */).then(c => wrapFunctional(c.default || c))
-export const WeatherInfo = () => import('../..\\components\\WeatherInfo.vue' /* webpackChunkName: "components/weather-info" */).then(c => wrapFunctional(c.default || c))
+export { default as Header } from '../..\\components\\Header.vue'
+export { default as HistoryList } from '../..\\components\\HistoryList.vue'
+export { default as WeatherForm } from '../..\\components\\WeatherForm.vue'
+export { default as WeatherInfo } from '../..\\components\\WeatherInfo.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
