@@ -3,14 +3,12 @@
     "name": "history",
     "path": "/history",
     "component": "C:\\\\Users\\\\RDziuba\\\\Desktop\\\\kurs Vue\\\\Apka\\\\weatherapp\\\\pages\\\\history\\\\index.vue",
-    "chunkName": "pages/history/index",
-    "_name": "_76c69f53"
+    "chunkName": "pages/history/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\RDziuba\\\\Desktop\\\\kurs Vue\\\\Apka\\\\weatherapp\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_54189f66"
+    "chunkName": "pages/index"
   }
 ]

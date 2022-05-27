@@ -53,7 +53,7 @@ h1 {
 
 @media (max-width: 420px) {
   .weather-status {
-    margin-top: -30%;
+    margin-top: -75px;
   }
 }
 </style>
