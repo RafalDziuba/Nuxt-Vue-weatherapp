@@ -1,5 +1,10 @@
 # weatherapp
 
+Typical, simple app build to test my skills in working with API, Vuex, Nuxt and Vue Router
+
+##Live version:
+https://weatherapp245.netlify.app/
+
 ## Build Setup
 
 ```bash
