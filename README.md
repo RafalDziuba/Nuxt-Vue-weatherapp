@@ -2,7 +2,9 @@
 
 Typical, simple app build to test my skills in working with API, Vuex, Nuxt and Vue Router
 
-##Live version:
+In this project, you can search for weather condition in any city you choose. This app also collect search history in 'History' tab. Clicking on each item in history, moves you to first screen and shows weather condition of this city.
+
+## Live version:
 https://weatherapp245.netlify.app/
 
 ## Build Setup
